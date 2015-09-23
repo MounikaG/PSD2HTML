@@ -1,24 +1,31 @@
-#about {
+#about{
   background-color: #2e3b4d;
   color: #FFFFFF;
-  padding: 15vh 0; }
-  #about h3 {
+  padding: 15vh 0;
+
+  h3 {
     text-transform: uppercase;
     font-size: 1.1em;
-    font-weight: bold; }
-  #about p {
-    font-weight: normal; }
+    font-weight: bold;
+  }
+  p {
+    font-weight: normal;
+  }
+}
 
-#about-action {
+
+
+#about-action{
   background-color: #bc5063;
-  background-image: url("../images/about.jpg");
+  background-image: url('../images/about.jpg');
   color: #FFFFFF;
   padding: 25vh 0;
   text-align: center;
   background-size: cover;
   background-position: 50% 100%;
-  position: relative; }
-  #about-action::before {
+  position: relative;
+ 
+  &::before {
     content: '';
     position: absolute;
     top: 0;
@@ -28,13 +35,19 @@
     height: 0px;
     border-top: 8vh solid #2e3b4d;
     border-right: 8vw solid transparent;
-    border-left: 8vw solid transparent; }
-  #about-action h2 {
-    margin-bottom: 0.5em; }
-  #about-action p {
+    border-left: 8vw solid transparent;
+  }
+
+  h2 {
+    margin-bottom: 0.5em;
+  }
+
+  p {
     max-width: 50vw;
-    margin: 0 auto; }
-  #about-action a {
+    margin:0 auto;
+  }
+
+  a {
     background-color: #FFFFFF;
     color: #ce404e;
     margin-top: 2em;
@@ -42,8 +55,11 @@
     height: 3em;
     line-height: 3em;
     border-radius: 1.5em;
-    display: inline-block; }
-    #about-action a:hover {
-      text-decoration: none; }
+    display: inline-block;
+    
+  &:hover {
+    text-decoration: none;
+  }
+  }
 
-/*# sourceMappingURL=about.css.map */
+}
